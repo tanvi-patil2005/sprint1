@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kalakriti - Art & Creativity. Handmade paintings, sketches, fabric art, resin work, customized gifts, and personalized artworks."
+    />
+    <title>Kalakriti | Art & Creativity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">Kalakriti</a>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#custom-art">Custom Art</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#order">Order</a>
+          <a href="#account">My Account</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#order" class="nav-cta">Order</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Handmade art • custom creations</p>
+            <h1>Kalakriti</h1>
+            <p class="tagline">“Turning Imagination into Art”</p>
+            <p class="intro">
+              Welcome to Kalakriti, where creativity meets customization. Explore
+              handmade paintings, sketches, fabric art, resin work, wall paintings
+              and many more artistic creations.
+            </p>
+
+            <div class="button-group">
+              <a href="#gallery" class="btn btn-primary">Explore Artwork</a>
+              <a href="#order" class="btn btn-secondary">Order Customized Art</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              src="images/portfolio.jpeg"
+              alt="Art and painting studio"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About Kalakriti</p>
+            <h2>Art created with heart and imagination</h2>
+          </div>
+
+          <div class="about-box">
+            <p>
+              Kalakriti is a creative art platform dedicated to handmade and
+              customized artwork. Every artwork is created with creativity, patience
+              and personal touch. From paintings and sketches to fabric, stone,
+              resin and wall art, Kalakriti creates unique artworks according to the
+              customer's requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="section gallery-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Art Gallery</p>
+            <h2>Explore my creative collection</h2>
+            <p class="section-intro">Browse every collection separately and find the artwork that speaks to you.</p>
+          </div>
+
+          <div class="gallery-tools">
+            <div class="category-filters" aria-label="Filter artwork categories">
+              <button class="filter-button active" type="button" data-filter="all">All Art</button>
+              <button class="filter-button" type="button" data-filter="canvas">Canvas</button>
+              <button class="filter-button" type="button" data-filter="acrylic">Acrylic</button>
+              <button class="filter-button" type="button" data-filter="sketch">Sketches</button>
+              <button class="filter-button" type="button" data-filter="portrait">Portraits</button>
+              <button class="filter-button" type="button" data-filter="wall">Wall Painting</button>
+              <button class="filter-button" type="button" data-filter="antarpat">Antarpat</button>
+              <button class="filter-button" type="button" data-filter="rangoli">Rangoli</button>
+              <button class="filter-button" type="button" data-filter="phone-cover">Phone Covers</button>
+              <button class="filter-button" type="button" data-filter="other">Other Art</button>
+            </div>
+
+          </div>
+
+          <div class="art-grid" id="art-grid">
+          </div>
+        </div>
+      </section>
+
+      <!-- Customization Section -->
+      <section id="custom-art" class="section customization-section">
+        <div class="container customization-box">
+          <div class="customization-text">
+            <p class="eyebrow">Customization</p>
+            <h2>Your Idea, Our Art</h2>
+            <p>
+              Customers can share their favorite style, colors, messages, and theme
+              to create a one-of-a-kind masterpiece.
+            </p>
+
+            <ul class="custom-list">
+              <li>Name customization</li>
+              <li>Colour customization</li>
+              <li>Size customization</li>
+              <li>Theme customization</li>
+              <li>Portrait customization</li>
+              <li>Quote/text customization</li>
+              <li>Gift customization</li>
+              <li>Design customization</li>
+            </ul>
+
+            <a href="#order" class="btn btn-primary">Request Custom Artwork</a>
+          </div>
+
+          <div class="customization-image">
+            <img
+              src="images/cover.jpeg"
+              alt="Custom design and painting artwork"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="account" class="section account-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Customer portal</p>
+            <h2>Sign in to manage your orders</h2>
+            <p class="section-intro">Create an account to place orders, follow their status, and add a review after delivery.</p>
+          </div>
+
+          <div id="auth-panel" class="account-panel">
+            <form id="login-form" class="account-form">
+              <h3>Sign in</h3>
+              <label for="login-email">Email</label>
+              <input id="login-email" name="email" type="email" autocomplete="email" required />
+              <label for="login-password">Password</label>
+              <input id="login-password" name="password" type="password" autocomplete="current-password" minlength="8" required />
+              <button class="btn btn-primary" type="submit">Sign in</button>
+            </form>
+
+            <form id="register-form" class="account-form">
+              <h3>Create account</h3>
+              <label for="register-name">Name</label>
+              <input id="register-name" name="name" autocomplete="name" maxlength="255" required />
+              <label for="register-email">Email</label>
+              <input id="register-email" name="email" type="email" autocomplete="email" required />
+              <label for="register-password">Password</label>
+              <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" required />
+              <button class="btn btn-secondary" type="submit">Create account</button>
+            </form>
+          </div>
+
+          <p id="auth-status" class="order-status" aria-live="polite"></p>
+          <div id="customer-dashboard" class="customer-dashboard is-hidden">
+            <div class="dashboard-heading">
+              <div>
+                <p class="eyebrow">Your dashboard</p>
+                <h3>Welcome, <span id="customer-name"></span></h3>
+              </div>
+              <button id="sign-out" class="btn btn-secondary" type="button">Sign out</button>
+            </div>
+            <div id="customer-orders" class="customer-orders"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Order Section -->
+      <section id="order" class="section order-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Order</p>
+            <h2>Place your order request</h2>
+          </div>
+
+          <form class="order-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Customer Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" maxlength="255" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" maxlength="255" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="+91 98765 43210" />
+              </div>
+
+              <div class="form-group">
+                <label for="category">Select Artwork Category</label>
+                <select id="category" name="category" required>
+                  <option>Painting</option>
+                  <option>Sketching</option>
+                  <option>Antarpat Designs</option>
+                  <option>Fabric Painting</option>
+                  <option>Stone Painting</option>
+                  <option>Mobile Cover Painting</option>
+                  <option>Wall Painting</option>
+                  <option>Resin Art</option>
+                  <option>Customized Gifts</option>
+                  <option>Portrait Art</option>
+                  <option>Canvas Painting</option>
+                  <option>Other Custom Artworks</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="artwork-name">Artwork Name / Reference</label>
+                <input type="text" id="artwork-name" name="artwork-name" placeholder="Name or reference" />
+              </div>
+
+              <div class="form-group">
+                <label for="size">Preferred Size</label>
+                <input type="text" id="size" name="size" placeholder="Example: 12x18 inch" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="color">Preferred Colour</label>
+                <input type="text" id="color" name="color" placeholder="Preferred colors" />
+              </div>
+
+              <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="1" min="1" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Required Date</label>
+                <input type="date" id="date" name="date" />
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Budget</label>
+                <input type="text" id="budget" name="budget" placeholder="Approximate budget" />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="customization-details">Customization Details</label>
+              <textarea
+                id="customization-details"
+                name="customization-details"
+                rows="4"
+                placeholder="Tell us about your idea, theme, colors, personal text or style."
+              ></textarea>
+            </div>
+
+            <div class="reference-upload full-width">
+              <label for="reference-image">Reference Image</label>
+              <p class="field-help">Add a photo, design, or inspiration image to help create your artwork.</p>
+              <input id="reference-image" name="reference-image" type="file" accept="image/*" />
+              <div id="reference-preview" class="reference-preview" aria-live="polite"></div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Additional Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Any extra details or instructions"
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Place Order Request</button>
+              <a href="https://wa.me/YOURNUMBER" class="whatsapp-btn">Order on WhatsApp</a>
+            </div>
+            <p id="order-status" class="order-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section id="reviews" class="section reviews-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Client Love</p>
+            <h2>Kind words from happy clients</h2>
+            <p class="section-intro">Add your completed order photos and customer messages here to build trust with new clients.</p>
+          </div>
+
+          <div class="review-layout">
+            <div class="reviews-grid" id="reviews-grid">
+            </div>
+
+            <form class="review-form" id="review-form">
+              <h3>Share your experience</h3>
+              <p>Clients can share their feedback and a photo of their completed order.</p>
+              <label for="review-name">Your name</label>
+              <input id="review-name" name="name" type="text" placeholder="Your name" required />
+              <label for="completed-order-image">Photo of your completed order</label>
+              <input id="completed-order-image" name="completed-order-image" type="file" accept="image/*" required />
+              <div id="completed-order-preview" class="reference-preview" aria-live="polite"></div>
+              <label for="review-message">Your review</label>
+              <textarea id="review-message" name="message" rows="4" placeholder="Tell us about your artwork" required></textarea>
+              <label for="review-rating">Your rating</label>
+              <select id="review-rating" name="rating">
+                <option value="5">★★★★★ 5 stars</option>
+                <option value="4">★★★★☆ 4 stars</option>
+                <option value="3">★★★☆☆ 3 stars</option>
+                <option value="2">★★☆☆☆ 2 stars</option>
+                <option value="1">★☆☆☆☆ 1 star</option>
+              </select>
+              <button class="btn btn-primary" type="submit">Submit Review</button>
+              <p id="review-status" class="order-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-text">
+              <p class="eyebrow">My Details</p>
+              <h2>Contact me for custom artwork</h2>
+              <ul class="contact-list">
+                <li><span>Artist:</span> Tanvi Patil</li>
+                <li><span>Instagram:</span> @tanvi_artwork</li>
+                <li><span>Email:</span> tanvipatil2065@gmail.com</li>
+                <li><span>WhatsApp:</span> +91 9653274932</li>
+                <li><span>Location:</span> Thane, Maharashtra</li>
+              </ul>
+            </div>
+
+            <div class="contact-buttons">
+              <a href="https://instagram.com/tanvi_artwork" class="btn btn-secondary">Instagram</a>
+              <a href="https://wa.me/919653274932" class="btn btn-secondary">WhatsApp</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tanvipatil2065@gmail.com&su=Kalakriti%20Artwork%20Order"
+   target="_blank"
+   class="btn btn-secondary">
+   Email
+</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="section features-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why Choose Kalakriti?</p>
+            <h2>Creative work made just for you</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🎨</div>
+              <h3>Handmade Artwork</h3>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">✨</div>
+              <h3>Customized Designs</h3>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">❤️</div>
+              <h3>Made with Creativity</h3>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">📦</div>
+              <h3>Made According to Your Requirements</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h3>Kalakriti – Art & Creativity</h3>
+          <p>“Colours are smiles of nature.”</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#custom-art">Custom Order</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Kalakriti. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Image viewer opens when an artwork or View Art button is clicked -->
+    <div class="art-modal" id="art-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close artwork viewer" data-close-modal>&times;</button>
+        <img id="modal-image" src="" alt="" />
+        <div class="modal-caption">
+          <p class="eyebrow">Artwork preview</p>
+          <h2 id="modal-title">Artwork</h2>
+          <p>Use your mouse wheel or pinch gesture to zoom.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

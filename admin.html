@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Order Management | Kalakriti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <div class="container">
+        <a href="/" class="logo">Kalakriti</a>
+        <a href="/" class="btn btn-secondary">Back to website</a>
+      </div>
+    </header>
+    <main class="container admin-main">
+      <div class="admin-toolbar">
+        <div>
+          <p class="eyebrow">Administration</p>
+          <h1>Order requests</h1>
+        </div>
+        <form id="admin-auth" class="admin-auth">
+          <input id="admin-token" type="password" autocomplete="current-password" placeholder="Admin token" aria-label="Admin token" required />
+          <button class="btn btn-primary" type="submit">Load orders</button>
+        </form>
+      </div>
+      <p id="admin-status" class="admin-status" aria-live="polite"></p>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Order</th><th>Customer</th><th>Contact</th><th>Artwork</th><th>Requirements</th><th>Reference</th><th>Status</th></tr>
+          </thead>
+          <tbody id="orders-body"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="admin.js"></script>
+  </body>
+</html>
